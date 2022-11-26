@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="./style.css">
+  <title>Frontend Mentor | News homepage</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+    .attribution {display: none;}
+  </style>
+</head>
+<body>
+<header class="header">
+<img src="./assets/images/logo.svg" alt="logo"/>
+<img src="./assets/images/icon-menu.svg" alt="icon menu" class="icon-menu"/ onclick="show()">
+  <div class="toggleMenu">
+     <div class="list-div">
+    <ul class="mainMenu">
+    <li class="toggle-list">Home</li>
+    <li class="toggle-list">New</li>
+    <li class="toggle-list">Popular</li>
+    <li class="toggle-list">Trending</li>
+    <li class="toggle-list">Categories</li>
+  </ul>
+</div>
+
+<div class="close"> 
+  <img src="./assets/images/icon-menu-close.svg" alt="close" class="closeMe" onclick="close()">
+</div>
+</div>
+    <ul class="navigation">
+      <li class="nav-links">Home</li>
+      <li class="nav-links">New</li>
+      <li class="nav-links">Popular</li>
+      <li class="nav-links">Trending</li>
+      <li class="nav-links">Categories</li>
+    </ul>
+</header>
+
+<div class="all">
+
+
+<main >
+<div class="web3-image">
+<img src="./assets/images/image-web-3-desktop.jpg" alt="web 3" class="web-3"/>
+</div>
+<img src="./assets/images/image-web-3-mobile.jpg" alt="web3"  class="mobileweb3-img"/>
+
+<div class="thing">
+
+    <p class="bold-text">The Bright Future of Web 3.0?</p>
+<div class="main-para">
+    <p>We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people. 
+  But is it really fulfilling its promise? </p>
+   <button class="read-more"> READ MORE</button>
+</div>
+  </div>
+ 
+  </main>
+
+
+  <aside class="aside">
+        <div class="section">
+    <h1 class="new">New</h1>
+
+            <h2 class="side-head">
+          Hydrogen VS Electric Cars
+        </h2>
+
+         <p class="side-para"> Will hydrogen-fueled cars ever catch up to EVs?</p>  <hr> 
+            
+          <h2 class="side-head">The Downsides of AI Artistry
+          </h2>
+              <p class="side-para"> What are the possible adverse effects of on-demand AI image generation? </p> <hr>
+
+          <h2 class="side-head">Is VC Funding Drying Up?</h2>
+             <p class="side-para">Private funding by VC firms is down 50% YOY. We take a look at what that means.</p> 
+            </div>
+     </aside>
+    </div>
+
+    <footer class="footer">
+<div class="each-news">
+    <img src="./assets/images/image-retro-pcs.jpg" alt="retro PCs" class="footer-image" />
+    <div class="footer-text">
+    <h2 class="footer-head"> 01</h2> 
+       <h3 class="footer-head2">Reviving Retro PCs</h3>
+       <p> What happens when old PCs are given modern upgrades?</p>
+   </div>
+  </div>  
+
+  <div class="each-news">
+      <img src="./assets/images/image-top-laptops.jpg" alt="top laptop"  class="footer-image" />
+     
+      <div class="footer-text" id="footer-text">
+        <h2 class="footer-head"> 02</h2> 
+         <h3 class ="footer-head2">Top 10 Laptops of 2022</h3>
+         <p>Our best picks for various needs and budgets.</p>
+    </div>
+  </div>
+
+ <div class="each-news">
+       <img src="./assets/images/image-gaming-growth.jpg" alt="gaming growth" class="footer-image" />
+       <div class="footer-text">
+       <h2 class="footer-head"> 03</h2> 
+       <h3 class="footer-head2"> The Growth of Gaming</h3>
+        <p> How the pandemic has sparked fresh opportunities.</p>
+      </div>
+ </div>
+ </footer>
+
+
+
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div>
+</body>
+
+<script>
+  //selectors
+
+  const closeMe = document.querySelector(".closeMe");
+  const openMenu = document.querySelector(".icon-menu");
+  const mainMenu = document.querySelector(".toggleMenu");
+
+  //AddEventListener
+
+
+closeMe.addEventListener('click',close);
+openMenu.addEventListener('click',show);
+
+//functions
+
+function show(){
+mainMenu.style.display = 'flex';
+}
+
+function close(){
+  mainMenu.style.display ='none';
+}
+
+</script>
+
+</html>
